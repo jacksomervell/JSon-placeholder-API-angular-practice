@@ -10,7 +10,7 @@
 </head>
 <body>
    <main ng-controller="DashboardController as dashboard">
-    <h1>{{ dashboard.name }}</h1>
+    <h1>Photos!</h1>
     <ul>
       <li ng-repeat="photo in dashboard.photos"><a ng-href="{{ photo.url }}">{{ photo.title }}</a>
       <img src= "{{photo.thumbnailUrl}}">
