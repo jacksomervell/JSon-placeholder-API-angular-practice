@@ -15,7 +15,7 @@ angular.module('photosApp')
         })
 
         return deferred.promise;
-    },
-
+    }
+  }
   return PhotoFactory;
 });

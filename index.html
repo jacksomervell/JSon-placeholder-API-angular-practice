@@ -9,6 +9,11 @@
   <script type="text/javascript" src="js/placeholderFactory.js"></script>
 </head>
 <body>
-  
+   <main ng-controller="DashboardController as dashboard">
+    <h1>{{ dashboard.name }}</h1>
+    <ul>
+      <li ng-repeat="photo in dashboard.photos"><a ng-href="{{ photo.url }}">{{ photo.title }}</a></li>
+    </ul>
+  </main>
 </body>
 </html>

@@ -5,7 +5,7 @@ angular.module('photosApp')
 .controller('DashboardController', function(PhotoFactory) {
   var self = this;
 
-  GithubFactory.getPhotos()
+  PhotoFactory.getPhotos()
     .then(function(response) {
       self.photos = response;
     });
